@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container .card {
+    width: 30%;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.container .card h4 {
+    background-color: rgb(0, 102, 255);
+    border-radius: 5PX;
+    color: white;
+    padding: 10px;
+}
+
+.container .card p {
+    padding: 5px;
+}
+
+    /* tap */
+@media (max-width : 998px)
+{
+    .container .card {
+        width: 45%;
+    }
+}
+    /* mobile */
+@media (max-width : 767px)
+{
+    .container
+    {
+        justify-content: center;
+    }
+    .container .card {
+        width: 90%;
+    }
+}
+
+
+/* form style */
+form {
+    width: 80%;
+    padding: 20px;
+    margin: 50px auto;
+    font-size: 20px;
+}
+
+form div {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+div input , div textarea{
+    padding: 10px;
+    width: 100%;
+}
